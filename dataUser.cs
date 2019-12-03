@@ -6,6 +6,14 @@ class dataUser{
   public string Titulo ;
   public string Edicao ;
   public string CadastroLivro;
+  public string Contador;
+
+  public void setContador(string cont){
+    Contador = cont;
+  }
+  public string getContador(){
+    return Contador;
+  }
   
   public void setNome(string nome){
     Nome = nome;
@@ -51,7 +59,8 @@ class dataUser{
   }
 
 
-  public dataUser (string nome, string telefone, string localidade, string titulo, string edicao){
+  public dataUser (string nome, string telefone, string localidade, string titulo, string edicao, string cont){
+    Contador = cont;
     Nome = nome;
     Telefone = telefone;
     Localidade = localidade;

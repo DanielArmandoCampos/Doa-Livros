@@ -6,4 +6,5 @@
             public string Localidade { get; set; }
             public string Titulo {get;set;}
             public int Edicao {get;set;}
+            public int Contador {get;set;}
         }
