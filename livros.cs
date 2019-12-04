@@ -6,10 +6,12 @@ namespace LendoTxtArmazenandoList
 {
 class livros : Cliente{
 
-public static int cont=0;
+//public static int cont=0;
   public  static void doarLivros(){
+    acessarRegistros();
+    Contadorr();
     
-   
+   /*
           string[] array = File.ReadAllLines("usuarios.txt");
  
           //percorro o array e para cada linha
@@ -33,7 +35,7 @@ public static int cont=0;
 
       //Console.WriteLine("deseja buscar pelo id");
        //      buscaid = Convert.ToInt32(Console.ReadLine());
-
+*/
 
 
 //Console.WriteLine(cont);/////////checagem ok
