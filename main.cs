@@ -9,23 +9,24 @@ namespace LendoTxtArmazenandoList
       List<Cliente> lista = new List<Cliente>();
       Console.WriteLine("deseja Doar ou buscar pelo livro? \n");
               
-        Console.WriteLine("Digite :");
-        Console.WriteLine("DOAR -> 1");
-        Console.WriteLine("BUSCAR -> 2 \n");
-        int ChecarCadastro = int.Parse(Console.ReadLine());
+      Console.WriteLine("Digite :");
+      Console.WriteLine("DOAR -> 1");
+      Console.WriteLine("BUSCAR -> 2 \n");
+      int ChecarCadastro = int.Parse(Console.ReadLine());
 
     
-        switch(ChecarCadastro){
-          case 1:
-          livros.doarLivros();
-          break;
+      switch(ChecarCadastro){
+        case 1:
+        livros.doarLivros();
+        break;
 
-          case 2:
-          buscar.buscarTitulo();
-          break;
+        case 2:
+        buscar.buscarTitulo();
+        break;
 
 
-        }
+
+      }
 
     }
   }

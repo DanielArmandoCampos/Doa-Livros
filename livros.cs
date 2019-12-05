@@ -46,10 +46,32 @@ namespace LendoTxtArmazenandoList
           string ttelefone = Convert.ToString(checkTel).ToUpper();
 
       Console.WriteLine("Digite sua localidade: \n");
+      int chekLocal = 0;
       string llocalidade = Console.ReadLine().ToUpper();
+      if(llocalidade == string.Empty){
+            try
+            {
+                chekLocal = int.Parse(Console.ReadLine());   
+            }
+            catch (Exception e)
+            {
+                throw new Exception("Os campos não podem ser vazios.");
+            }
+      }
 
       Console.WriteLine("Digite o Nome do Livro que deseja Doar: \n");
+      int chektitulo = 0;
       string ttitulo = Console.ReadLine().ToUpper();
+      if(ttitulo == string.Empty){
+            try
+            {
+                chektitulo = int.Parse(Console.ReadLine());   
+            }
+            catch (Exception e)
+            {
+                throw new Exception("Os campos não podem ser vazios.");
+            }
+      }
               
       Console.WriteLine("Qual a Edição do livro: \n");
       string eedicao = Console.ReadLine().ToUpper();
