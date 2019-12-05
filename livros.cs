@@ -73,8 +73,19 @@ namespace LendoTxtArmazenandoList
             }
       }
               
+      int chekedicao = 0;
       Console.WriteLine("Qual a Edição do livro: \n");
       string eedicao = Console.ReadLine().ToUpper();
+      if(eedicao == string.Empty){
+            try
+            {
+                chekedicao = int.Parse(Console.ReadLine());   
+            }
+            catch (Exception e)
+            {
+                throw new Exception("Os campos não podem ser vazios.");
+            }
+      }
 
       string ccontador = Convert.ToString(cont);
             
