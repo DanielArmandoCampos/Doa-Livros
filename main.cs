@@ -13,21 +13,31 @@ namespace LendoTxtArmazenandoList
       Console.WriteLine("DOAR -> 1");
       Console.WriteLine("BUSCAR -> 2 \n");
       int ChecarCadastro = int.Parse(Console.ReadLine());
+      while(true)
+      {
+        try
+        {
+          switch(ChecarCadastro){
+            case 1:
+            livros.doarLivros();
+            break;
 
-    
-      switch(ChecarCadastro){
-        case 1:
-        livros.doarLivros();
-        break;
+            case 2:
+            buscar.buscarTitulo();
+            break;
 
-        case 2:
-        buscar.buscarTitulo();
-        break;
 
+
+          }
+        }
+        catch (Exception e)
+        {
+          Console.WriteLine(e.Message);
+
+        }
 
 
       }
-
     }
   }
 }

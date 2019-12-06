@@ -5,7 +5,7 @@ namespace LendoTxtArmazenandoList
 {
   class buscar : Cliente{
     
-    Cliente buscaid =new Cliente();
+    Cliente buscaid = new Cliente();
 
     public  static void contador(){
       //para ler o contador
@@ -15,10 +15,10 @@ namespace LendoTxtArmazenandoList
       Contadorr();
 
       // fim ler contador
-      Console.WriteLine(cont);/////////checagem ok
+      Console.WriteLine(cont);
 
     }
-    public  static void buscarTitulo(){
+    public static void buscarTitulo(){
       tituu = true;
       Console.WriteLine("Digite o titulo do livro que deseja procurar: \n");
       tit = Console.ReadLine().ToUpper();     
@@ -31,11 +31,16 @@ namespace LendoTxtArmazenandoList
       Console.WriteLine("");
       Console.WriteLine("Digite o numero de busca do livro desejado: \n");
       dados = true;
-        id = Console.ReadLine();
-        
-        acessarRegistros();
-        dados = false;
+      
+      id = Console.ReadLine();
+      acessarRegistros();
+      dados = false;
+      
+      
+
     }
+     
+    
 
     
   }
