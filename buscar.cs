@@ -23,7 +23,7 @@ namespace LendoTxtArmazenandoList
       Console.WriteLine("Digite o titulo do livro que deseja procurar: \n");
       tit = Console.ReadLine().ToUpper();     
       
-      /// SÓ ESTA PEGANDO O ULTIMO VALOR
+      
       acessarRegistros();       
       tituu = false;
       
@@ -35,13 +35,7 @@ namespace LendoTxtArmazenandoList
       id = Console.ReadLine();
       acessarRegistros();
       dados = false;
-      
-      
-
     }
-     
-    
-
-    
+        
   }
 }
