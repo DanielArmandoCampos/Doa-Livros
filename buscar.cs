@@ -21,8 +21,7 @@ namespace LendoTxtArmazenandoList
     public static void buscarTitulo(){
       tituu = true;
       Console.WriteLine("Digite o titulo do livro que deseja procurar: \n");
-      tit = Console.ReadLine().ToUpper();     
-      
+      tit = Console.ReadLine().ToUpper();         
       
       acessarRegistros();       
       tituu = false;

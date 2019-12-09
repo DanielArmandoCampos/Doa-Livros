@@ -62,7 +62,7 @@ class Cliente //classe pai
       {
         if (titu.Contains(tit)) // Aqui eu checo se na célula[x] têm a string que é procurada.
         {
-          
+          conttt=1;
           Console.WriteLine("");
           Console.WriteLine("Titulo: {0};   Edição: {1};\nLocalidade:{2}", titu, edic, loc);
           Console.WriteLine("Numero para maiores detalhes: {0}",checar);
@@ -74,14 +74,15 @@ class Cliente //classe pai
       {
         if (checar.Contains(id)) // Aqui eu checo se na célula[x] têm a string que é procurada.
         {
-          conttt++;
+          
           //Console.WriteLine("DADOS DETALHADOS DO DOADOR:\n");
+          Console.WriteLine("");
           Console.WriteLine("Titulo do Livro: {3}  Edição: {4};\nNome do Doador: {0}    Localidade: {2};   Telefone de Contato: {1}", nom, telef, loc, titu, edic);
           Console.WriteLine("");
             
         }
-        if (conttt==0){
-          throw new Exception("nenhum livro encontrado");
+        if (conttt<=0){
+          throw new Exception("Nenhum livro encontrado");
         }   
       }       
     }
